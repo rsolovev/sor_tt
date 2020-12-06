@@ -64,3 +64,8 @@
   shell: "usermod -aG docker {{ item }}"
   with_items:
     - root
+
+- name: Install docker-compose
+  shell: sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+  shell: sudo chmod +x /usr/local/bin/docker-compose
+  shell: sudo ln -sfn /usr/local/bin/docker-compose /usr/bin/docker-compose
