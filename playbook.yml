@@ -1,7 +1,6 @@
 # vim: ts=2
 ---
-- hosts: 127.0.0.1
-  connection: local
+- hosts: int2.tst.iroha.tech
   remote_user: root
   become: yes
   become_method: sudo
