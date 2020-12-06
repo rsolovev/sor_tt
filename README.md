@@ -4,10 +4,17 @@ Ansible playbook with 2 roles:
 1. Install and configure docker (latest stable)
 2. Clone, build and run containerized python app 
 
-playbook is considered to run locally (for simplicity - hosts: 127.0.0.1)
 
-to run playbook on server:
+to run playbook:
 
 ```shell
 ansible-playbook playbook.yml -f 10
 ```
+
+NOTE: playbook is considered to run on host machine with editted ```/etc/ansible/hosts``` file (server added there) 
+(but for simplicity we can specify 
+```yml
+- hosts: 127.0.0.1
+  connection: local
+```
+to make it local)
