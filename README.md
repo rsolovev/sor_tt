@@ -1,8 +1,8 @@
 # Soramitsu test task
 
 Ansible playbook with 2 roles:
-1. Install and configure docker (latest stable)
-2. Clone, build and run containerized python app 
+1. Install and configure docker (latest stable) and docker-compose (for nginx + app)
+2. Clone, build and run containerized python app (with nginx as proxy)
 
 
 to run playbook:
