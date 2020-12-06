@@ -1,0 +1,11 @@
+# vim: ts=2
+---
+- hosts: all
+  remote_user: root
+  become: yes
+  become_method: sudo
+      
+  tasks:
+
+  - include_role:
+      name: docker
