@@ -5,13 +5,13 @@ Ansible playbook with 2 roles:
 2. Clone, build and run containerized python app 
 
 
-to run playbook on server:
+to run playbook:
 
 ```shell
 ansible-playbook playbook.yml -f 10
 ```
 
-playbook is considered to run on host machine with editted ```/etc/ansible/hosts``` file (server added there) 
+NOTE: playbook is considered to run on host machine with editted ```/etc/ansible/hosts``` file (server added there) 
 (but for simplicity we can specify 
 ```yml
 - hosts: 127.0.0.1
