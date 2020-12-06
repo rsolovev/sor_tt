@@ -1,5 +1,6 @@
 # vim: ts=2
 ---
+
 - hosts: int2.tst.iroha.tech
   remote_user: root
   become: yes

@@ -11,8 +11,5 @@
 - name: Build image
   shell: docker build -t time_app:latest /root/sor_tt_code
 
-- name: Stop existing container if exists
-  shell: docker stop time_app_1 || true && docker rm time_app_1 || true
-
-- name: Run container
-  shell: docker run -d -p 80:80 --name time_app_1 time_app 
+- name: Run compose
+  shell: chdir=/root/sor_tt_code docker-compose up -d --scale time_app=2
